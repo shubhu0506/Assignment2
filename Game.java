@@ -83,117 +83,41 @@ class Umpire {
 		{
 			System.out.println("Player3 won the game");
 		}
-		else if(numFromGuesser>numFromPlayer1 )
+		else if(numFromGuesser>numFromPlayer1 && numFromGuesser>numFromPlayer2 && numFromGuesser>numFromPlayer3)
 		{
-			if(numFromGuesser>numFromPlayer2 && numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player1 Player2 and Player3 Number is low enter a high number");
-			}
-			else if(numFromGuesser<numFromPlayer2 && numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player 1 the no is low enter a high number,Player2 and Player3 the no is high enter a low number");
-			}
-			else if(numFromGuesser<numFromPlayer2 && numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player1 and Player3 number is low enter a high number, Player2 number is high enter low number");
-			}
-			else if(numFromGuesser>numFromPlayer2 && numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player1 and Player2 number is low enter a high no,Player3 number is high enter a low number");
-			}
-			else if(numFromGuesser>numFromPlayer2)
-			{
-				System.out.println("Player1 and Player2  Number is low enter a high number");
-			}
-			else if(numFromGuesser<numFromPlayer2)
-			{
-				System.out.println("Player1 number is low enter a high number ,Player2 number is high enter a low number");
-			}
-			else if(numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player1 and Player3 Number is low enter a high number");
-			}
-			else if(numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player1 and Player3 Number is low enter a high number");
-			}
-			else {
-			System.out.println("Player1 Number is low enter a high number ");
-			}
+			System.out.println("Player1 ,Player2 and Player3 no is low enter a high number");
 		}
-		else if(numFromGuesser>numFromPlayer2)
+		else if(numFromGuesser<numFromPlayer1 && numFromGuesser<numFromPlayer2 && numFromGuesser<numFromPlayer3)
 		{
-			if(numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player2 and Player3 Number is low enter a high number");
-			}
-			else if(numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player2 number is low enter a high number, Player3 Number is high enter a low number");
-			}
-			else {
-			System.out.println("Player2 Number is low enter a high number ");
-			}
+			System.out.println("Player1 ,Player2 and Player3 no is high enter a low number");
 		}
-		else if(numFromGuesser>numFromPlayer3)
+		else if(numFromGuesser>numFromPlayer1 && numFromGuesser<numFromPlayer2 && numFromGuesser<numFromPlayer3)
 		{
-			System.out.println("Player3 Number is low enter a high number ");
+			System.out.println("Player1 no is low enter a high number,Player2 and Player3 no is high enter a low number");
 		}
-		else if(numFromGuesser<numFromPlayer1 )
+		else if(numFromGuesser>numFromPlayer1 && numFromGuesser>numFromPlayer2 && numFromGuesser<numFromPlayer3)
 		{
-			if(numFromGuesser<numFromPlayer2 && numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player1 Player2 and Player3 Number is high enter a low number");
-			}
-			else if(numFromGuesser>numFromPlayer2 && numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player 1 the no is high enter a low number,Player2 and Player3 the no is low enter a high number");
-			}
-			else if(numFromGuesser<numFromPlayer2 && numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player 1 and Player2 number is high enter a low number ,Player3 number is low enter a high number");
-			}
-			else if(numFromGuesser>numFromPlayer2 && numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player1 and Player3 number is high enter a low number , Player2 number is low enter a high number");
-			}
-			else if(numFromGuesser<numFromPlayer2)
-			{
-				System.out.println("Player1 and Player2  Number is high enter a low number");
-			}
-			else if(numFromGuesser>numFromPlayer2)
-			{
-				System.out.println("Player1 number is high enter a low number,Player2 number is low enter a high number");
-			}
-			else if(numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player1 and Player3 Number is high enter a low number");
-			}
-			else if(numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player1 number is high enter a low number,Player3 number is low enter a high number");
-			}
-			else {
-			System.out.println("Player1 Number is high enter a low number ");
-			}
+			System.out.println("Player1 and Player2 no is low enter a high number, Player3 no is high enter a low number");
 		}
-		else if(numFromGuesser<numFromPlayer2)
+		else if(numFromGuesser>numFromPlayer1 && numFromGuesser<numFromPlayer2 && numFromGuesser>numFromPlayer3)
 		{
-			if(numFromGuesser<numFromPlayer3)
-			{
-				System.out.println("Player2 and Player3 Number is high enter a low number");
-			}
-			else if(numFromGuesser>numFromPlayer3)
-			{
-				System.out.println("Player2 number is high enter a low number, Player3 Number is low enter a high number");
-			}
-			else {
-			System.out.println("Player2 Number is high enter a low number ");
-			}
+			System.out.println("Player1 no and Player3 is low enter a high number,Player2  no is high enter a low number");
 		}
-		else if(numFromGuesser<numFromPlayer3)
+		else if(numFromGuesser<numFromPlayer1 && numFromGuesser>numFromPlayer2 && numFromGuesser>numFromPlayer3) 
 		{
-			System.out.println("Player3 Number is high enter a low number ");
+			System.out.println("Player1 no is high enter a low number,Player2 and Player3 no is low enter a high number");
+		}
+		else if(numFromGuesser<numFromPlayer1 && numFromGuesser<numFromPlayer2 && numFromGuesser>numFromPlayer3)
+		{
+			System.out.println("Player1 and Player2 no is high enter a low number, Player3 no is low enter a high number");
+		}
+		else if(numFromGuesser<numFromPlayer1 && numFromGuesser>numFromPlayer2 && numFromGuesser<numFromPlayer3)
+		{
+			System.out.println("Player1 and Player3 no is high enter a low number,Player2 no is low enter a high number");
+		}
+		else if(numFromGuesser<numFromPlayer1 && numFromGuesser>numFromPlayer2 && numFromGuesser>numFromPlayer3)
+		{
+			System.out.println("Player1 no is high enter a low number,Player2 and Player3 no is low enter a high number");
 		}
 		else
 		{
